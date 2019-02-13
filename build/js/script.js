@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// function ready(fn) {\n//   if (document.attachEvent ? document.readyState === \"complete\" : document.readyState !== \"loading\"){\n//     fn();\n//   } else {\n//     document.addEventListener('DOMContentLoaded', fn);\n//   }\n// }\n//\n// ready(function(){\n//   console.log('DOM ready');\n// });\n\n//# sourceURL=webpack:///./src/js/script.js?");
+eval("// function ready(fn) {\n//   if (document.attachEvent ? document.readyState === \"complete\" : document.readyState !== \"loading\"){\n//     fn();\n//   } else {\n//     document.addEventListener('DOMContentLoaded', fn);\n//   }\n// }\n//\n// ready(function(){\n//   console.log('DOM ready');\n// });\n// Гамбургер\nvar toggle = document.getElementById('toggle');\nvar menu = document.getElementById('menuList');\ntoggle.classList.remove('main-nav__toggle--close');\nmenu.classList.remove('main-nav__list--open');\ntoggle.addEventListener('click', menuVisible);\n\nfunction menuVisible(e) {\n  e.preventDefault();\n  toggle.classList.toggle('main-nav__toggle--close');\n  menu.classList.toggle('main-nav__list--open');\n}\n\n;\n\n//# sourceURL=webpack:///./src/js/script.js?");
 
 /***/ })
 

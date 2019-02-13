@@ -1,14 +1,66 @@
-.tools {
+.intro {
+  background-color: $white;
+
   &__inner {
-  }
-  &__questions {
-  }
-  &__kit {
-  }
-  &__kit-list {
-  }
-  &__kit-item {
-  }
-  &__kit-link {
+    width: 300px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 40px;
   }
 }
+
+.intro-title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.intro-guests {
+  display: block;
+  line-height: 24px;
+  font-size: $font-sm;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro-text {
+  line-height: 24px;
+  font-size: $font-xs;
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.intro-steps {
+  margin-top: 40px;
+  text-align: center;
+  border-bottom: solid 5px $main-color;
+
+  &__title {
+    line-height: 24px;
+    font-size: $font-sm;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+
+    p {
+      line-height: 24px;
+      font-size: $font-xs;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    svg {
+      fill: $main-color;
+    }
+  }
+}
+

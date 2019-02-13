@@ -6,10 +6,18 @@ html {
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -45,3 +53,7 @@ img {
     url('../fonts/montserrat-v12-latin_cyrillic-700.woff') format('woff'); /* Modern Browsers */
 }
 /* stylelint-enable*/
+
+span.accent {
+  font-weight: 700;
+}

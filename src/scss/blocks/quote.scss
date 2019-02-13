@@ -1,16 +1,29 @@
-.intro {
+.quote {
+  background-color: $gray-light;
+
   &__inner {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
   }
-}
-.intro-title {
-}
-.intro-guests {
-}
-.intro-text {
-}
-.intro-steps {
-  &__title {
+
+  &__text {
+    font-size: $font-xs;
+    font-style: italic;
+    line-height: 24px;
+
+    p {
+      margin-bottom: 15px;
+    }
   }
-  &__item {
+
+  &__author {
+    display: block;
+    font-weight: 700;
+    color: $main-color;
+    text-align: right;
   }
 }

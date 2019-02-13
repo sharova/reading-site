@@ -1,4 +1,21 @@
 .page-footer {
+  background-color: $main-color;
+
   &__inner {
+    height: 100px;
+    width: 300px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 30px;
+
+    a {
+      margin-bottom: 15px;
+    }
+
+    p{
+      color: $white;
+      font-size: $font-xs;
+    }
   }
 }

@@ -23,8 +23,8 @@ const path = require('path');
 const svgstore = require('gulp-svgstore');
 const svgmin = require('gulp-svgmin');
 const csso = require('gulp-csso');
-const webp = require('gulp-webp');
-const webpHTML = require('gulp-webp-html');
+// const webp = require('gulp-webp');
+// const webpHTML = require('gulp-webp-html');
 
 function styles() {
   return src(`${dir.src}scss/style.scss`)
@@ -44,7 +44,7 @@ exports.styles = styles;
 function copyHTML() {
   return src(`${dir.src}*.html`)
     .pipe(plumber())
-    .pipe(webpHTML())
+    // .pipe(webpHTML())
     .pipe(dest(dir.build));
 }
 exports.copyHTML = copyHTML;

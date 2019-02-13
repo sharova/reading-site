@@ -1,9 +1,19 @@
 .page-header {
   background-color: $white;
-  height: 60px;
 
   &__inner {
-    width: 320px;
+    width: 300px;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    min-height: 50px;
+    overflow: hidden;
+
+    @media (min-width: $screen-md) {
+      height: 60px;
+    }
   }
 }

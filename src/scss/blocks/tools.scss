@@ -1,10 +1,62 @@
-.slider {
+.tools {
+  background-color: $gray-light;
+
   &__inner {
+    width: 300px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    p {
+      margin-bottom: 10px;
+      line-height: 24px;
+      font-size: $font-xs;
+    }
   }
-  &__title {
+
+  &__questions {
+    display: block;
+    font-size: $font-sm;
+    color: $main-color;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
-  &__item {
+
+  &__kit {
+    margin-top: 30px;
+    font-size: $font-sm;
+    font-weight: 700;
   }
-}
-.slick-slider {
+
+  &__kit-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  &__kit-item {
+    margin-bottom: 20px;
+    padding-left: 60px;
+    position: relative;
+
+    &:before {
+      background-image: url('../img/open-book.png');
+      content: '';
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: 0;
+      top: 5px;
+    }
+  }
+
+  &__kit-link {
+    font-size: $font-xs;
+    font-weight: 700;
+    color: $gray-dark;
+  }
 }

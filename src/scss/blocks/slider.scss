@@ -1,4 +1,23 @@
-.page-footer {
+.slider {
+
   &__inner {
+    width: 300px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
+
+  &__title {
+    line-height: 24px;
+    font-size: $font-sm;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+  }
+}
+.slick-slider {
 }
