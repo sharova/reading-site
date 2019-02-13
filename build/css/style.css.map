@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/page.scss"],"names":[],"mappings":"AAAA,K,CACE,6E","file":"style.css","sourcesContent":[".page {\n  font-family: $font-family;\n}\n"]}

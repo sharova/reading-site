@@ -1,0 +1,9 @@
+.page-header {
+  background-color: $white;
+  height: 60px;
+
+  &__inner {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
