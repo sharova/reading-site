@@ -7,6 +7,10 @@
     padding-left: 10px;
     padding-right: 5px;
     padding-top: 40px;
+
+    @media (min-width: $screen-md) {
+      width: 750px;
+    }
   }
 }
 
@@ -25,14 +29,26 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 30px;
+
+  @media (min-width: $screen-md) {
+    font-size: $font-md;
+  }
 }
 
 .intro-text {
   line-height: 24px;
   font-size: $font-xs;
 
+  @media (min-width: $screen-md) {
+    font-size: $font-sm;
+  }
+
   p {
     margin-bottom: 10px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -41,25 +57,54 @@
   text-align: center;
   border-bottom: solid 5px $main-color;
 
+  @media (min-width: $screen-md) {
+  }
+
   &__title {
     line-height: 24px;
     font-size: $font-sm;
     font-weight: 700;
     margin-bottom: 30px;
+
+    @media (min-width: $screen-md) {
+      font-size: $font-md;
+    }
+  }
+
+  &__items {
+    @media (min-width: $screen-md) {
+      display: flex;
+      align-items: top;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
+
+    @media (min-width: $screen-md) {
+      width: 350px;
+      padding-left: 15px;
+      padding-right: 15px;
+
+    }
 
     p {
       line-height: 24px;
       font-size: $font-xs;
       text-align: center;
-      margin-top: 40px;
-      margin-bottom: 40px;
+      margin-top: 20px;
+      margin-bottom: 50px;
     }
 
     svg {
       fill: $main-color;
+      margin-top: 20px;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    &__item:last-child {
+      margin: 0 auto;
     }
   }
 }

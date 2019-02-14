@@ -9,6 +9,10 @@
     padding-right: 5px;
     padding-top: 30px;
 
+    @media (min-width: $screen-md) {
+      width: 750px;
+    }
+
     a {
       margin-bottom: 15px;
     }

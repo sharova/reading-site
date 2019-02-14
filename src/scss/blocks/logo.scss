@@ -3,6 +3,10 @@
   width: 210px;
 
   @media (min-width: $screen-md) {
+    width: 259px;
+  }
+
+  @media (min-width: $screen-lg) {
     width: 299px;
   }
 }

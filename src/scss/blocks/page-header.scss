@@ -14,6 +14,13 @@
 
     @media (min-width: $screen-md) {
       height: 60px;
+      width: 750px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1170px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 }
