@@ -13,6 +13,12 @@
       width: 750px;
     }
 
+    @media (min-width: $screen-lg) {
+      width: 1170px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
     a {
       margin-bottom: 15px;
     }

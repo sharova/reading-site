@@ -15,6 +15,13 @@
       padding-right: 30px;
     }
 
+    @media (min-width: $screen-lg) {
+      width: 1170px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 60px;
+    }
+
     p {
       margin-bottom: 10px;
       line-height: 24px;
@@ -24,6 +31,10 @@
         margin-bottom: 20px;
         line-height: 30px;
         font-size: $font-sm;
+      }
+
+      @media (min-width: $screen-lg) {
+        font-size: $font-md;
       }
     }
   }
@@ -36,6 +47,11 @@
     font-weight: 700;
     margin-top: 30px;
     margin-bottom: 30px;
+
+    @media (min-width: $screen-lg) {
+      font-size: $font-md;
+      line-height: 30px;
+    }
   }
 
   &__kit {
@@ -46,11 +62,21 @@
     @media (min-width: $screen-md) {
       margin-top: 50px;
     }
+
+    @media (min-width: $screen-lg) {
+      p {
+        font-size: $font-lg;
+      }
+    }
   }
 
   &__kit-list {
     list-style-type: none;
     padding-left: 0;
+
+    @media (min-width: $screen-lg) {
+      padding-top: 20px;
+    }
   }
 
   &__kit-item {
@@ -82,5 +108,19 @@
     font-size: $font-xs;
     font-weight: 700;
     color: $gray-dark;
+
+    @media (min-width: $screen-lg) {
+      font-size: $font-sm;
+      padding-top: 10px;
+      display: block;
+
+      &:hover {
+        color: $accent-color;
+      }
+
+      &:focus {
+        color: $second-color-light;
+      }
+    }
   }
 }

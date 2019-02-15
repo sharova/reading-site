@@ -62,7 +62,7 @@
     }
 
     @media (min-width: $screen-lg) {
-      margin-left: 175px;
+      margin-left: 150px;
     }
 
     &--open {
@@ -103,7 +103,7 @@
   @media (min-width: $screen-lg) {
 
     &__link:hover {
-      color: $second-color;
+      color: $accent-color;
     }
     &__link:focus {
       color: $second-color-light;

@@ -7,6 +7,19 @@
     padding-right: 5px;
     padding-top: 40px;
     padding-bottom: 40px;
+
+    @media (min-width: $screen-md) {
+      width: 750px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1170px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 40px;
+    }
   }
 
   &__title {
@@ -18,6 +31,55 @@
 
   &__item {
   }
+
+  &__block {
+
+  }
 }
 .slick-slider {
+}
+
+@media (min-width: $screen-lg) {
+  .slider {
+    &__title {
+
+    }
+
+    &__item {
+      background-color: $gray-light;
+      width: 900px;
+      min-height: 490px;
+    }
+
+    &__item-intro {
+      width: 900px;
+      min-height: 490px;
+    }
+
+    &__block {
+      width: 900px;
+      margin: 0 auto;
+      position: relative;
+    }
+  }
+}
+
+.slick-arrow {
+height: 50px;
+width: 50px;
+border-radius: 50%;
+background-color: $gray-light;
+border: none;
+position: absolute;
+z-index: 2;
+}
+
+.slick-prev {
+  left: -80px;
+  top: 245px;
+
+}
+.slick-next {
+right: -80px;
+top: 245px;
 }

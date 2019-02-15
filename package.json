@@ -38,9 +38,12 @@
     "lint-staged": "^8.1.1",
     "path": "^0.12.7",
     "picturefill": "^3.0.3",
+    "slick-carousel": "^1.8.1",
     "svg4everybody": "^2.1.9",
     "webpack": "^4.29.0",
     "webpack-stream": "^5.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
