@@ -1,0 +1,31 @@
+.videos {
+  background-color: $gray-darker;
+  @media (min-width: $screen-md) {
+    background-image: url('../img/pictures/banner-videos.jpg');
+      background-repeat: no-repeat;
+      background-position: right;
+      background-position: 100% 100%;
+}
+
+  &__inner {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+
+    @media (min-width: $screen-md) {
+      width: 750px;
+      height: 400px;
+      padding-top: 40px;
+
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1170px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}

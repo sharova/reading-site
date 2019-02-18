@@ -1,0 +1,99 @@
+.materials {
+  background-color: $gray-light;
+
+  &__inner {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+
+    @media (min-width: $screen-md) {
+      width: 750px;
+      height: 400px;
+      padding-top: 40px;
+      background-image: url('../img/pictures/banner-site.jpg');
+      background-repeat: no-repeat;
+      background-position: right;
+      background-position: 110% 100%;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1170px;
+      padding-left: 40px;
+      padding-right: 40px;
+      background-position: 95% 100%;
+    }
+  }
+
+  &__buttons {
+
+
+    @media (min-width: $screen-md) {
+
+    }
+
+    @media (min-width: $screen-lg) {
+
+    }
+
+  }
+
+  &__buttons ul {
+    padding: 0;
+  }
+
+  &__item {
+
+    list-style-type: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+      width: 400px;
+      min-height: 45px;
+      background-color: $main-color;
+      border-radius: 5px;
+      padding-left: 15px;
+      padding-top: 15px;
+      padding-right: 10px;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: block;
+      width: 500px;
+      height: 50px;
+      background-color: $main-color;
+      border-radius: 5px;
+      padding-left: 35px;
+      padding-top: 15px;
+      margin-bottom: 30px;
+
+      &:hover {
+        background-color: $main-color-dark;
+      }
+    }
+
+  }
+
+  &__item-link {
+
+
+    @media (min-width: $screen-md) {
+      color: $white;
+      font-size: $font-sm;
+      font-weight: 700;
+    }
+
+    @media (min-width: $screen-lg) {
+
+
+
+    }
+
+  }
+
+}
+

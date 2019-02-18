@@ -29,12 +29,7 @@
 
       @media (min-width: $screen-md) {
         margin-bottom: 20px;
-        line-height: 30px;
         font-size: $font-sm;
-      }
-
-      @media (min-width: $screen-lg) {
-        font-size: $font-md;
       }
     }
   }
@@ -60,7 +55,7 @@
     font-weight: 700;
 
     @media (min-width: $screen-md) {
-      margin-top: 50px;
+      margin-top: 70px;
     }
 
     @media (min-width: $screen-lg) {

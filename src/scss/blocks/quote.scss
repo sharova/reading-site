@@ -11,7 +11,7 @@
 
     @media (min-width: $screen-md) {
       width: 750px;
-      min-height: 400px;
+      height: 400px;
       padding-top: 50px;
       background-image: url('../img/pictures/banner-girl.jpg');
       background-repeat: no-repeat;
@@ -33,13 +33,12 @@
 
     @media (min-width: $screen-md) {
       width: 450px;
-      font-size: $font-md;
+      font-size: $font-lg;
       line-height: 30px;
     }
 
     @media (min-width: $screen-lg) {
       width: 700px;
-      font-size: $font-lg;
       line-height: 40px;
     }
 
