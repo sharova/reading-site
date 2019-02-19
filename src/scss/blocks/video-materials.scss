@@ -1,0 +1,55 @@
+.video-materials {
+  background-color: $gray-darker;
+
+  @media (min-width: $screen-md) {
+    background-image: url('../img/pictures/banner-videos.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: 100% 100%;
+  }
+
+  &__inner {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+
+    @media (min-width: $screen-md) {
+      width: 750px;
+      height: 400px;
+      padding-top: 40px;
+
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1170px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  &__text {
+    display: block;
+
+    & p:first-child {
+      font-weight: 700;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 600px;
+      font-size: $font-lg;
+      line-height: 24px;
+
+      & p {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__text-accented {
+    font-weight: 700;
+    color: $main-color;
+  }
+}

@@ -1,0 +1,44 @@
+.program {
+
+  &__inner {
+    width: 300px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    @media (min-width: $screen-md) {
+      width: 750px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1170px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 60px;
+    }
+
+  }
+
+  &__title {
+    line-height: 24px;
+    font-size: $font-sm;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+    & a {
+      color: $black;
+    }
+
+    @media (min-width: $screen-md) {
+      font-size: $font-md;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: $font-lg;
+    }
+  }
+}

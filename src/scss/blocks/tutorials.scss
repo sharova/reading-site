@@ -1,28 +1,25 @@
-.videos {
-
-  @media (min-width: $screen-md) {
-
-  }
-
+.tutorials {
   &__inner {
     width: 300px;
     margin: 0 auto;
-    padding-top: 30px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 5px;
+    padding-top: 40px;
     padding-bottom: 30px;
 
     @media (min-width: $screen-md) {
       width: 750px;
-      padding-top: 40px;
-
+      padding-left: 30px;
+      padding-right: 30px;
     }
 
     @media (min-width: $screen-lg) {
       width: 1170px;
       padding-left: 40px;
       padding-right: 40px;
+      padding-top: 60px;
     }
+
   }
 
   &__title {
@@ -30,8 +27,10 @@
     font-size: $font-sm;
     font-weight: 700;
     margin-bottom: 30px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+
+    & a {
+      color: $black;
+    }
 
     @media (min-width: $screen-md) {
       font-size: $font-md;
@@ -42,28 +41,43 @@
     }
   }
 
-  &__title:first-child {
-    margin-top: 20px;
+  &__pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    & img {
+      width: 200px;
+      border: 3px solid $gray-light;
+      margin-bottom: 15px;
+
+      @media (min-width: $screen-md) {
+        width: 150px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 250px;
+      }
+    }
   }
 
   &__text {
     line-height: 24px;
     font-size: $font-xs;
-    margin-bottom: 60px;
+
 
     @media (min-width: $screen-md) {
       font-size: $font-sm;
     }
-  }
 
-  &__block {
-    border-bottom: solid 4px $main-color;
-
-    & iframe {
-      margin-bottom: 30px;
+    & p {
+      margin-bottom: 15px;
     }
   }
-  &__block:last-child {
-    border-bottom: none;
-  }
 }
+
+// @media (min-width: $screen-lg) {
+//   .tutorials__pictures a:hover ~ img {
+//     border: 3px solid $accent-color;
+//   }
+// }
