@@ -29,9 +29,7 @@
     line-height: 24px;
     font-size: $font-sm;
     font-weight: 700;
-    margin-bottom: 30px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 
     @media (min-width: $screen-md) {
       font-size: $font-md;
@@ -42,9 +40,6 @@
     }
   }
 
-  &__title:first-child {
-    margin-top: 20px;
-  }
 
   &__text {
     line-height: 24px;
@@ -58,9 +53,21 @@
 
   &__block {
     border-bottom: solid 4px $main-color;
+    padding-top: 40px;
 
     & iframe {
       margin-bottom: 30px;
+      width: 290px;
+      height: 190px;
+
+      @media (min-width: $screen-md) {
+        width: 720px;
+        height: 405px;
+      }
+
+      @media (min-width: $screen-lg) {
+        padding-top: 20px;
+      }
     }
   }
   &__block:last-child {

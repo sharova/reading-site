@@ -1,15 +1,15 @@
-.video-materials {
-  background-color: $gray-darker;
+.cooperation {
+  background-color: $color-banner;
 
   @media (min-width: $screen-md) {
-    background-image: url('../img/pictures/banner-videos.jpg');
+    background-image: url('../img/pictures/banner-cooperation.jpg');
     background-repeat: no-repeat;
     background-position: right;
-    background-position: 180% 100%;
+    background-position: 130% 100%;
   }
 
   @media (min-width: $screen-lg) {
-    background-position: 100% 100%;
+    background-position: 90% 100%;
   }
 
   &__inner {
@@ -35,30 +35,43 @@
   }
 
   &__text {
-    display: block;
+    font-weight: 700;
+    font-size: $font-sm;
+    line-height: 24px;
 
     & p {
-      margin-bottom: 15px;
-    }
-
-    & p:first-child {
-      font-weight: 700;
+      margin-bottom: 20px;
     }
 
     @media (min-width: $screen-md) {
-      width: 350px;
-      font-size: $font-sm;
+      width: 380px;
+      font-size: $font-md;
+      line-height: 24px;
     }
 
     @media (min-width: $screen-lg) {
       width: 600px;
       font-size: $font-lg;
-      line-height: 24px;
+      line-height: 30px;
     }
   }
 
-  &__text-accented {
+  &__name {
+    display: block;
     font-weight: 700;
     color: $main-color;
+  }
+
+  &__email a {
+    display: block;
+    margin-top: 15px;
+    color: $main-color;
+    font-weight: 700;
+
+    @media (min-width: $screen-lg) {
+      &:hover {
+        color: $accent-color;
+      }
+    }
   }
 }

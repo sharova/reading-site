@@ -57,7 +57,6 @@
   &__item-text {
 
     @media (min-width: $screen-md) {
-      display: inline-block;
       position: absolute;
       left: 250px;
       width: 420px;
@@ -67,32 +66,28 @@
       left: 300px;
       width: 550px;
       padding-top: 20px;
+
     }
   }
-  &__item-text-more {
-    display: none;
 
-    @media (min-width: $screen-lg) {
-      display: block;
-      margin-top: 20px;
-      font-size: $font-sm;
-      line-height: 20px;
-    }
-
-  }
-
-  &__item-text p {
+  &__item-text-short {
     display: none;
 
     @media (min-width: $screen-md) {
       display: block;
     }
+  }
+
+  &__item-text-more {
+    display: none;
 
     @media (min-width: $screen-lg) {
-      font-size: $font-xs;
+      display: block;
+      margin-top: 15px;
+      font-size: $font-sm;
       line-height: 18px;
-      font-style: italic;
     }
+
   }
 
   &__block {

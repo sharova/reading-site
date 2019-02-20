@@ -45,15 +45,28 @@
   }
 
   &__item {
-
     list-style-type: none;
+  }
+
+  &__item-link {
+    display: block;
+    color: $white;
+    font-size: $font-xs;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 250px;
+    background-color: $main-color;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
 
     @media (min-width: $screen-md) {
-      display: block;
+      font-size: $font-sm;
       width: 400px;
       min-height: 45px;
-      background-color: $main-color;
-      border-radius: 5px;
       padding-left: 15px;
       padding-top: 15px;
       padding-right: 10px;
@@ -62,38 +75,15 @@
     }
 
     @media (min-width: $screen-lg) {
-      display: block;
       width: 500px;
       height: 50px;
-      background-color: $main-color;
-      border-radius: 5px;
       padding-left: 35px;
       padding-top: 15px;
-      margin-bottom: 30px;
 
       &:hover {
         background-color: $main-color-dark;
       }
     }
-
   }
-
-  &__item-link {
-
-
-    @media (min-width: $screen-md) {
-      color: $white;
-      font-size: $font-sm;
-      font-weight: 700;
-    }
-
-    @media (min-width: $screen-lg) {
-
-
-
-    }
-
-  }
-
 }
 

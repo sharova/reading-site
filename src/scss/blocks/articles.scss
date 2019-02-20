@@ -41,4 +41,48 @@
       font-size: $font-lg;
     }
   }
+
+  &__text {
+    line-height: 24px;
+    font-size: $font-xs;
+
+
+    @media (min-width: $screen-md) {
+      font-size: $font-sm;
+    }
+
+    & p {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__files {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+
+    a {
+      height: 120px;
+      width: 100px;
+      padding-top: 110px;
+      display: block;
+      position: relative;
+      color: $black;
+      font-size: $font-md;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    a:before {
+      background-image: url('../img/article.png');
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      left: 0;
+      top: 0px;
+    }
+  }
 }
